@@ -2,7 +2,7 @@ import random
 import sys
 
 
-def guess_number(name="player"):
+def guess_number(name="Player"):
     games_counts = 0
     player_wins = 0
 
@@ -43,7 +43,12 @@ def guess_number(name="player"):
         if play_again.lower() == "y":
             return play_guess_number()
         else:
-            sys.exit(f"\nThanks for playing {name}!")
+            print("\n🎉🎉🎉🎉")
+            print("Thank you for playing!\n")
+            if __name__ == "__main__":
+                sys.exit(f"Bye {name}! 👋")
+            else:
+                return
 
     return play_guess_number
 
